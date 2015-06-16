@@ -17,8 +17,11 @@ import adapter.MyFragmentAdapter;
 /**
  * Created by ToanNB on 6/10/2015.
  */
-public class RegisterActivity extends ActionBarActivity {
+public class RegisterActivity extends ActionBarActivity implements View.OnClickListener {
 
+    private ImageView btnCancel;
+
+    private ActionBar actionBar;
     private ViewPager mViewPager;
     private CirclePageIndicator mCirclePageIndicator;
     private MyFragmentAdapter mMyFragmentAdapter;
@@ -28,6 +31,11 @@ public class RegisterActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register_viewpager);
 
+        initView();
+        initData();
+    }
+
+    private void initView() {
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mMyFragmentAdapter = new MyFragmentAdapter(getSupportFragmentManager());
         mViewPager.setAdapter(mMyFragmentAdapter);
@@ -40,21 +48,26 @@ public class RegisterActivity extends ActionBarActivity {
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.register_layout_1_custom_actionbar);
 
-        ActionBar actionBar = getSupportActionBar();
+        actionBar = getSupportActionBar();
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#1B727B")));
 
-//        actionBar.setDisplayHomeAsUpEnabled(true);
+        btnCancel = (ImageView) findViewById(R.id.cancel_register);
+        btnCancel.setOnClickListener(this);
+    }
 
-
-        ImageView iv_cancel = (ImageView) findViewById(R.id.cancel_register);
-        iv_cancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-            }
-        });
+    private void initData() {
 
     }
 
-
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        switch (id) {
+            case R.id.cancel_register:
+                Intent intentCancle = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(intentCancle);
+                finish();
+                break;
+        }
+    }
 }
