@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MTQ</string>
+    <string name="app_name">Mạnh Thường Quân</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -43,4 +43,18 @@
     <string name="success_content_2">Để gửi được yêu cầu vay, vui lòng điền đầy đủ
         thông tin cơ bản bằng cách chạm vào biểu tượng dưới đây</string>
     <string name="success_button_ignore">Bỏ qua</string>
+
+    <string name="home_page_title">Trang chủ</string>
+    <string name="home_page_user_title">Tài khoản</string>
+    <string name="home_page_inform_title">Thông báo</string>
+    <string name="home_page_help_title">Trợ giúp</string>
+    <string name="home_page_make_request_loan_cash">Tạo yêu cầu vay tiền mặt</string>
+    <string name="home_page_history_loan_cash">Lịch sử vay tiền mặt</string>
+    <string name="home_page_list_loaner">Danh sách người cho vay</string>
+    <string name="home_page_make_request_instalment">Tạo yêu cầu vay mua trả góp</string>
+    <string name="home_page_history_instalment">Lịch sử vay mua trả góp</string>
+    <string name="home_page_list_shop_instalment">Danh sách cửa hàng trả góp</string>
+    <string name="home_page_news_mtq">Tin tức MTQ</string>
+    <string name="home_page_help">Hướng dẫn/Trợ giúp</string>
+    <string name="home_page_contact">Liên hệ</string>
 </resources>
