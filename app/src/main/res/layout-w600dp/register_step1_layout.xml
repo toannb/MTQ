@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/textView_step1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center_vertical"
+        android:background="#26a587"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="30dp"
+            android:text="@string/register_step1_title"
+            android:textColor="#ffffff"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:text="@string/register_step1_content" />
+    </LinearLayout>
+
+
+
+    <ExpandableListView
+        android:id="@+id/register_expand_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:layout_below="@id/textView_step1"
+        android:layout_marginBottom="80dp"
+        android:groupIndicator="@null"
+        />
+    <Button
+        android:id="@+id/register_step1_continute_button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/login_button"
+        android:drawableRight="@drawable/ico_angle_right_small"
+        android:paddingLeft="-350dp"
+        android:paddingRight="25dp"
+        android:text="@string/register_button_continue"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+</RelativeLayout>

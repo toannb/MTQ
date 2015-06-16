@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:text="Đăng ký"
+        android:textColor="#ffffff"
+        android:textSize="40dp" />
+    <ImageButton
+        android:id="@+id/cancel_register"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ico_close"
+        android:background="@drawable/registor_close_button"
+        />
+</LinearLayout>

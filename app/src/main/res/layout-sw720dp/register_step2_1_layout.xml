@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_smoke"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/textView_step1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#26a587"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="30dp"
+            android:text="@string/register_step2_title"
+            android:textSize="40dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:text="@string/register_step2_content"
+            android:textSize="30dp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/textView_step1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:text="+84"
+                android:textSize="30dp"
+                android:textColor="@color/gray" />
+
+            <EditText
+                android:id="@+id/register_step2_1_phone_number"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:background="@null"
+                android:hint="@string/register_step2_1_phone_hint"
+                android:numeric="integer"
+                android:textSize="30dp"
+                android:textColorHint="#d4d4d6" />
+
+            <ImageView
+                android:id="@+id/register_step2_erase_id"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ico_erase"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:background="@drawable/register_step2_1_ok_button"
+            android:text="OK"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+</RelativeLayout>
