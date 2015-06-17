@@ -1,12 +1,12 @@
-package adapter;
+package com.nganluong.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import fragment.RegisterFragmentStep1;
-import fragment.RegisterFragmentStep2;
-import fragment.RegisterFragmentStep3;
+import com.nganluong.fragment.RegisterFragmentStep1;
+import com.nganluong.fragment.RegisterFragmentStep2;
+import com.nganluong.fragment.RegisterFragmentStep3;
 
 /**
  * Created by ToanNB on 6/11/2015.

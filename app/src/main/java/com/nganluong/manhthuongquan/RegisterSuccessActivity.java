@@ -1,4 +1,4 @@
-package com.manhthuongquan.mtq;
+package com.nganluong.manhthuongquan;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,6 +7,7 @@ import android.os.Bundle;
  * Created by ToanNB on 6/16/2015.
  */
 public class RegisterSuccessActivity extends Activity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

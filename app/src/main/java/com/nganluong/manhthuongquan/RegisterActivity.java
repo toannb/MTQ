@@ -1,4 +1,4 @@
-package com.manhthuongquan.mtq;
+package com.nganluong.manhthuongquan;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -12,7 +12,7 @@ import android.widget.ImageView;
 
 import com.viewpagerindicator.CirclePageIndicator;
 
-import adapter.MyFragmentAdapter;
+import com.nganluong.adapter.MyFragmentAdapter;
 
 /**
  * Created by ToanNB on 6/10/2015.
@@ -32,7 +32,6 @@ public class RegisterActivity extends ActionBarActivity implements View.OnClickL
         setContentView(R.layout.register_viewpager);
 
         initView();
-        initData();
     }
 
     private void initView() {
@@ -53,10 +52,6 @@ public class RegisterActivity extends ActionBarActivity implements View.OnClickL
 
         btnCancel = (ImageView) findViewById(R.id.cancel_register);
         btnCancel.setOnClickListener(this);
-    }
-
-    private void initData() {
-
     }
 
     @Override

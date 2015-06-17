@@ -1,14 +1,17 @@
-package helper;
+package com.nganluong.bean;
 
 /**
  * Created by ToanNB on 6/8/2015.
  */
 public class Child {
     private String mName;
-    private int mImage;
 
-    public Child(String name){
-        this.mName = name;
+    public Child() {
+
+    }
+
+    public Child(String mName) {
+        this.mName = mName;
     }
 
     public String getName() {
@@ -17,13 +20,5 @@ public class Child {
 
     public void setName(String Name) {
         this.mName = Name;
-    }
-
-    public int getImage() {
-        return mImage;
-    }
-
-    public void setImage(int Image) {
-        this.mImage = Image;
     }
 }

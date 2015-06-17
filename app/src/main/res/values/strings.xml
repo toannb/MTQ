@@ -15,8 +15,7 @@
         nghề tự do. Bạn đang gặp chút khó khăn về tài chính để trang trải cuộc sống,
         cho một sự lựa chọn nào đó. Mạnh Thường Quân sẽ giúp bạn.</string>
     <string name="register_loaner_content">"Người cho vay là các Cá nhân, Tổ chức đang hoạt động trong lĩnh vực Tín dụng tiêu dùng với mong muốn giúp người Việt tháo gỡ khó khăn tài chính và nâng cao chất lượng cuộc sống."</string>
-    <string name="register_shop_content">"Người Bán là người đang kinh doanh, bán lẻ Hàng hóa có nhu cầu bán hàng trả góp thông qua hệ thống Mạnh Thường Quân.
-"</string>
+    <string name="register_shop_content">"Người Bán là người đang kinh doanh, bán lẻ Hàng hóa có nhu cầu bán hàng trả góp thông qua hệ thống Mạnh Thường Quân."</string>
     <string name="register_step1_borrower_title">Tôi là người đi vay</string>
     <string name="register_step1_loaner_title">Tôi là người cho vay</string>
     <string name="register_step1_shop_title">Tôi là người bán hàng trả góp</string>
@@ -40,8 +39,8 @@
 
     <string name="success_congratunation_text">Chúc mừng</string>
     <string name="success_content_1">Bạn đã đăng ký tài khoản thành công</string>
-    <string name="success_content_2">Để gửi được yêu cầu vay, vui lòng điền đầy đủ
-        thông tin cơ bản bằng cách chạm vào biểu tượng dưới đây</string>
+    <string name="success_content_2">Để gửi được yêu cầu vay, vui lòng điền đầy đủ thông tin cơ bản bằng cách chạm vào
+        biểu tượng dưới đây</string>
     <string name="success_button_ignore">Bỏ qua</string>
 
     <string name="home_page_title">Trang chủ</string>

@@ -1,4 +1,4 @@
-package fragment;
+package com.nganluong.fragment;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.manhthuongquan.mtq.R;
+import com.nganluong.manhthuongquan.R;
 
 /**
  * Created by ToanNB on 6/11/2015.

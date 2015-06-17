@@ -1,4 +1,4 @@
-package adapter;
+package com.nganluong.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -9,12 +9,13 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.manhthuongquan.mtq.R;
+import com.nganluong.config.Variables;
+import com.nganluong.manhthuongquan.R;
 
 import java.util.ArrayList;
 
-import helper.Child;
-import helper.Group;
+import com.nganluong.bean.Child;
+import com.nganluong.bean.Group;
 
 /**
  * Created by ToanNB on 6/8/2015.
@@ -44,7 +45,6 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
 
     @Override
     public int getChildrenCount(int groupPosition) {
-//        ArrayList<Child> chList = mGroups.get(groupPosition).getItems();
         return 1;
     }
 
@@ -78,23 +78,24 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
         Group group = (Group) getGroup(groupPosition);
         if (convertView == null) {
-            LayoutInflater inf = (LayoutInflater) mContext
-                    .getSystemService(mContext.LAYOUT_INFLATER_SERVICE);
+            LayoutInflater inf = (LayoutInflater) mContext.getSystemService(mContext.LAYOUT_INFLATER_SERVICE);
             convertView = inf.inflate(R.layout.register_step1_group_item, null);
         }
         TextView tv = (TextView) convertView.findViewById(R.id.register_step1_group_name);
         tv.setText(group.getName());
+        tv.setTypeface(Variables.objFont);
+
         ImageView iv_indicator = (ImageView) convertView.findViewById(R.id.register_step1_group_indicator_id);
         ImageView iv_check_group = (ImageView) convertView.findViewById(R.id.register_step1_check_group_id);
 
 
-        if(isExpanded){
+        if (isExpanded) {
             convertView.setBackgroundColor(Color.parseColor("#667280"));
             tv.setTextColor(Color.parseColor("#F5F5F5"));
             iv_indicator.setImageResource(R.drawable.ico_angel_up);
             iv_check_group.setVisibility(View.VISIBLE);
 
-        } else{
+        } else {
             convertView.setBackgroundColor(Color.parseColor("#F5F5F5"));
             tv.setTextColor(Color.parseColor("#667280"));
             iv_indicator.setImageResource(R.drawable.ico_angel_down);
@@ -112,8 +113,8 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
         }
 
         TextView tv = (TextView) convertView.findViewById(R.id.register_borrower_textview_id);
-
         tv.setText(child.getName());
+        tv.setTypeface(Variables.objFont);
 
         return convertView;
     }
@@ -122,6 +123,4 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
     public boolean isChildSelectable(int groupPosition, int childPosition) {
         return true;
     }
-
-
 }
