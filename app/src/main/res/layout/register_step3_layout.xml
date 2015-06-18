@@ -108,7 +108,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginTop="5dp"
-        android:background="@drawable/login_button"
+        android:background="@drawable/login_button_effect"
         android:drawableRight="@drawable/ico_angle_right_small"
         android:gravity="center_vertical"
         android:paddingLeft="25dp"

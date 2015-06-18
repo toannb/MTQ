@@ -50,7 +50,7 @@
         android:layout_marginRight="3dp"
         android:layout_marginTop="5dp"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/login_button"
+        android:background="@drawable/login_button_normal"
         android:drawableRight="@drawable/ico_angle_right_small"
         android:paddingLeft="-350dp"
         android:paddingRight="25dp"

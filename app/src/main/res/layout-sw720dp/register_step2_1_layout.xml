@@ -82,7 +82,7 @@
         <Button
             android:layout_width="120dp"
             android:layout_height="100dp"
-            android:background="@drawable/register_step2_1_ok_button"
+            android:background="@drawable/register_step2_1_ok_button_effect"
             android:text="OK"
             android:textAppearance="?android:textAppearanceLarge"
             android:textColor="@color/white" />

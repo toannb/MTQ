@@ -37,6 +37,11 @@
     <string name="register_step3_enter_password_again">Nhập lại mật khẩu</string>
     <string name="register_step3_complete_button">Hoàn tất</string>
 
+    <string name="foget_tep_1_title">Bước 1</string>
+    <string name="foget_tep_1_content">Nhập số điện thoại</string>
+    <string name="foget_tep_2_content">Xác nhận số điện thoại</string>
+    <string name="foget_tep_3_content">Tạo mật khẩu mới</string>
+
     <string name="success_congratunation_text">Chúc mừng</string>
     <string name="success_content_1">Bạn đã đăng ký tài khoản thành công</string>
     <string name="success_content_2">Để gửi được yêu cầu vay, vui lòng điền đầy đủ thông tin cơ bản bằng cách chạm vào

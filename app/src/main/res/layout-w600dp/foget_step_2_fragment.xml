@@ -32,7 +32,7 @@
             android:layout_height="30dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="30dp"
-            android:text="@string/register_step2_content"
+            android:text="@string/foget_tep_2_content"
             android:textColor="@color/white" />
     </LinearLayout>
 
@@ -63,7 +63,7 @@
                 android:textSize="18dp" />
 
             <EditText
-                android:id="@+id/register_step2_1_phone_number"
+                android:id="@+id/editFogetPassStep2Phone"
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center_vertical"
@@ -76,7 +76,7 @@
                 android:textSize="18dp" />
 
             <ImageView
-                android:id="@+id/register_step2_erase_id"
+                android:id="@+id/btnFogetPassDeletePhoneStep2"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_gravity="center_vertical"
@@ -87,7 +87,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btnOK"
+            android:id="@+id/btnOKFogetPassStep2"
             android:layout_width="70dp"
             android:layout_height="60dp"
             android:background="@drawable/register_step2_1_ok_button_effect"
@@ -104,7 +104,7 @@
         android:background="#AAD4A4">
 
         <RelativeLayout
-            android:id="@+id/register_step2_otp_inform"
+            android:id="@+id/foget_step2_otp_inform"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -112,7 +112,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/register_step2_otp_textview1"
+                android:id="@+id/foget_step2_otp_textview1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -126,10 +126,10 @@
                 android:visibility="visible" />
 
             <TextView
-                android:id="@+id/register_step2_otp_textview2"
+                android:id="@+id/foget_step2_otp_textview2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/register_step2_otp_textview1"
+                android:layout_below="@+id/foget_step2_otp_textview1"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="10dp"
@@ -141,7 +141,7 @@
                 android:visibility="visible" />
 
             <LinearLayout
-                android:id="@+id/register_step2_otp_layout_id"
+                android:id="@+id/foget_step2_otp_layout_id"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_marginLeft="25dp"
@@ -160,7 +160,7 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/register_step2_otp_edittext"
+                        android:id="@+id/editFogetPassOTP"
                         android:layout_width="0dp"
                         android:layout_height="60dp"
                         android:layout_weight="1"
@@ -173,20 +173,19 @@
                         android:textSize="18dp" />
 
                     <Button
-                        android:id="@+id/btnOkOTP"
+                        android:id="@+id/btnFogetPassOkOTP"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginRight="8dp"
-                        android:background="@drawable/register_step2_1_ok_button_effect"
+                        android:background="#9FA4AA"
                         android:text="OK"
-                        android:layout_gravity="bottom"
                         android:textAppearance="?android:textAppearanceLarge"
                         android:textColor="@color/white"
                         android:textSize="23dp" />
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/txtErrorOTP"
+                    android:id="@+id/txtFogetPassErrorOTP"
                     android:layout_width="185dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
