@@ -61,13 +61,16 @@
     <string name="home_page_user_title">Tài khoản</string>
     <string name="home_page_inform_title">Thông báo</string>
     <string name="home_page_help_title">Trợ giúp</string>
-    <string name="home_page_make_request_loan_cash">Tạo yêu cầu vay tiền mặt</string>
-    <string name="home_page_history_loan_cash">Lịch sử vay tiền mặt</string>
-    <string name="home_page_list_loaner">Danh sách người cho vay</string>
-    <string name="home_page_make_request_instalment">Tạo yêu cầu vay mua trả góp</string>
-    <string name="home_page_history_instalment">Lịch sử vay mua trả góp</string>
-    <string name="home_page_list_shop_instalment">Danh sách cửa hàng trả góp</string>
-    <string name="home_page_news_mtq">Tin tức MTQ</string>
-    <string name="home_page_help">Hướng dẫn/Trợ giúp</string>
+    <string name="home_page_make_request_loan_cash">Tạo yêu cầu\n vay tiền mặt</string>
+    <string name="home_page_history_loan_cash">Lịch sử vay\n tiền mặt</string>
+    <string name="home_page_list_loaner">Danh sách\n người cho vay</string>
+    <string name="home_page_make_request_instalment">Tạo yêu cầu\n vay mua trả góp</string>
+    <string name="home_page_history_instalment">Lịch sử vay\n mua trả góp</string>
+    <string name="home_page_list_shop_instalment">Danh sách\n cửa hàng trả góp</string>
+    <string name="home_page_news_mtq">Tin tức\n MTQ</string>
+    <string name="home_page_help">Hướng dẫn/\nTrợ giúp</string>
     <string name="home_page_contact">Liên hệ</string>
+    <string name="home_page_hello_user">Xin chào %1$s,</string>
+    <string name="home_page_user_number">Hiện có &lt;font color=\'#FF0000\'>%1$d&lt;/font> người duyệt yêu cầu vay tiền mặt\n
+        Bạn chưa có yêu cầu vay mua trả góp</string>
 </resources>

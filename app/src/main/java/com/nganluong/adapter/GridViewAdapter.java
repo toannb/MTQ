@@ -5,11 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.nganluong.bean.ItemHomePage;
+import com.nganluong.config.Variables;
 import com.nganluong.manhthuongquan.R;
 
 import java.util.ArrayList;
@@ -65,6 +65,7 @@ public class GridViewAdapter extends ArrayAdapter<ItemHomePage> {
 
         holder.imageView.setImageResource(mArrDatas.get(pos).getIconItem());
         holder.textView.setText(mArrDatas.get(pos).getNameItem());
+        holder.textView.setTypeface(Variables.objFont);
 
         return convertView;
     }
