@@ -9,27 +9,31 @@
     <LinearLayout
         android:id="@+id/layout1"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:background="#26a587"
         android:gravity="center_vertical"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingBottom="9.5dp"
+        android:paddingTop="9.5dp">
 
         <TextView
+            android:id="@+id/txtBuoc2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_marginLeft="30dp"
             android:text="@string/register_step2_title"
             android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#ffffff" />
+            android:textColor="@color/white" />
 
         <TextView
+            android:id="@+id/txtTitleBuoc2"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="30dp"
             android:text="@string/register_step2_content"
-            android:textColor="#ffffff" />
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
@@ -47,6 +51,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/txtDauSo"
                 android:layout_width="45dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center_vertical"
@@ -54,7 +59,8 @@
                 android:gravity="center"
                 android:text="+84"
                 android:textAppearance="?android:textAppearanceLarge"
-                android:textColor="@color/gray" />
+                android:textColor="@color/gray"
+                android:textSize="18dp" />
 
             <EditText
                 android:id="@+id/register_step2_1_phone_number"
@@ -65,8 +71,9 @@
                 android:background="@null"
                 android:hint="@string/register_step2_1_phone_hint"
                 android:numeric="integer"
-                android:textSize="18dp"
-                android:textColorHint="#d4d4d6" />
+                android:textColor="@color/gray"
+                android:textColorHint="#d4d4d6"
+                android:textSize="18dp" />
 
             <ImageView
                 android:id="@+id/register_step2_erase_id"
@@ -75,26 +82,28 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginRight="10dp"
                 android:src="@drawable/ico_erase"
-                android:visibility="invisible" />
+                android:visibility="visible" />
 
         </LinearLayout>
 
         <Button
+            android:id="@+id/btnOK"
             android:layout_width="70dp"
             android:layout_height="60dp"
             android:background="@drawable/register_step2_1_ok_button"
             android:text="OK"
             android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="23dp" />
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/layout2"
         android:background="#AAD4A4">
 
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/register_step2_otp_inform"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -114,12 +123,13 @@
                 android:text="@string/register_step2_verity_text"
                 android:textColor="@color/gray"
                 android:textSize="15dp"
-                android:visibility="invisible"/>
+                android:visibility="visible" />
 
             <TextView
                 android:id="@+id/register_step2_otp_textview2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/register_step2_otp_textview1"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="10dp"
@@ -128,7 +138,7 @@
                 android:text="@string/register_step2_verity_text_2"
                 android:textColor="@color/gray"
                 android:textSize="15dp"
-                android:visibility="invisible"/>
+                android:visibility="visible" />
 
             <LinearLayout
                 android:id="@+id/register_step2_otp_layout_id"
@@ -136,10 +146,11 @@
                 android:layout_height="150dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
-                android:layout_marginTop="130dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
                 android:background="@drawable/bg_otp"
                 android:orientation="vertical"
-                android:visibility="invisible">
+                android:visibility="visible">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -155,31 +166,38 @@
                         android:layout_weight="1"
                         android:background="@color/white"
                         android:hint="@string/register_step2_otp_edittext_hint"
+                        android:numeric="integer"
                         android:paddingLeft="10dp"
-                        android:textColorHint="@color/hint_color" />
+                        android:textColor="@color/gray"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="18dp" />
 
                     <Button
+                        android:id="@+id/btnOkOTP"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:background="#9FA4AA"
                         android:layout_marginRight="8dp"
+                        android:background="#9FA4AA"
                         android:text="OK"
                         android:textAppearance="?android:textAppearanceLarge"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/white"
+                        android:textSize="23dp" />
                 </LinearLayout>
-                
+
                 <TextView
+                    android:id="@+id/txtErrorOTP"
                     android:layout_width="185dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
                     android:drawableLeft="@drawable/ico_mobile_2"
-                    android:paddingRight="10dp"
                     android:gravity="center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="@string/register_step2_resend_code_otp"
                     android:textColor="@color/white"
-                    android:text="@string/register_step2_resend_code_otp"/>
-                
+                    android:textSize="15dp" />
+
             </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
 </RelativeLayout>

@@ -8,4 +8,5 @@
     <color name="actionbar_bg">#1B727B</color>
     <color name="hint_color">#D4D4D6</color>
     <color name="bg_close_actionbar">#47888F</color>
+    <color name="color_register_and_forget">#667180</color>
 </resources>

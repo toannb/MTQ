@@ -8,50 +8,52 @@
     <LinearLayout
         android:id="@+id/textView_step1"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
         android:background="#26a587"
-        android:orientation="vertical">
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
 
         <TextView
+            android:id="@+id/txtBuoc1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_marginLeft="30dp"
             android:text="@string/register_step1_title"
-            android:textColor="#ffffff"
-            android:textAppearance="?android:textAppearanceLarge" />
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/white" />
+
         <TextView
+            android:id="@+id/txtTitleBuoc1"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="30dp"
-            android:textColor="#ffffff"
-            android:text="@string/register_step1_content" />
+            android:text="@string/register_step1_content"
+            android:textColor="@color/white" />
     </LinearLayout>
-
-
 
     <ExpandableListView
         android:id="@+id/register_expand_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:choiceMode="singleChoice"
         android:layout_below="@id/textView_step1"
         android:layout_marginBottom="52dp"
-        android:groupIndicator="@null"
-        />
+        android:choiceMode="singleChoice"
+        android:groupIndicator="@null" />
+
     <Button
         android:id="@+id/register_step1_continute_button"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
         android:background="@drawable/login_button"
         android:drawableRight="@drawable/ico_angle_right_small"
-        android:paddingLeft="-170dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="25dp"
         android:paddingRight="25dp"
         android:text="@string/register_button_continue"
         android:textColor="@color/white"

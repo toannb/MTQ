@@ -88,7 +88,6 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
         ImageView iv_indicator = (ImageView) convertView.findViewById(R.id.register_step1_group_indicator_id);
         ImageView iv_check_group = (ImageView) convertView.findViewById(R.id.register_step1_check_group_id);
 
-
         if (isExpanded) {
             convertView.setBackgroundColor(Color.parseColor("#667280"));
             tv.setTextColor(Color.parseColor("#F5F5F5"));

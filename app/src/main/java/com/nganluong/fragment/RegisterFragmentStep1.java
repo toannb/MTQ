@@ -1,14 +1,16 @@
 package com.nganluong.fragment;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ExpandableListView;
+import android.widget.TextView;
 
+import com.nganluong.config.Variables;
 import com.nganluong.manhthuongquan.R;
 
 import java.util.ArrayList;
@@ -16,19 +18,29 @@ import java.util.ArrayList;
 import com.nganluong.adapter.ExpandListAdapter;
 import com.nganluong.bean.Child;
 import com.nganluong.bean.Group;
+import com.nganluong.manhthuongquan.RegisterActivity;
 
 /**
  * Created by ToanNB on 6/11/2015.
  */
-public class RegisterFragmentStep1 extends Fragment implements ExpandableListView.OnChildClickListener {
+public class RegisterFragmentStep1 extends Fragment implements ExpandableListView.OnChildClickListener, View.OnClickListener {
 
     private ExpandableListView mExpandableListView;
     private ExpandListAdapter mExpandListAdapter;
     private ArrayList<Group> mListGroups;
 
+    private TextView txtBuoc1, txtTitleBuoc1;
+
+    private Button btnContinueRegister;
+
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.register_step1_layout, container, false);
+
+        txtBuoc1 = (TextView) view.findViewById(R.id.txtBuoc1);
+        txtTitleBuoc1 = (TextView) view.findViewById(R.id.txtTitleBuoc1);
+
+        btnContinueRegister = (Button) view.findViewById(R.id.register_step1_continute_button);
 
         mExpandableListView = (ExpandableListView) view.findViewById(R.id.register_expand_listview);
         mListGroups = addListItem();
@@ -41,8 +53,15 @@ public class RegisterFragmentStep1 extends Fragment implements ExpandableListVie
 
         mExpandableListView.setIndicatorBounds(width - GetPixelFromDips(50), width - GetPixelFromDips(10));
 
+        btnContinueRegister.setOnClickListener(this);
+
+        btnContinueRegister.setTypeface(Variables.objFont);
+        txtBuoc1.setTypeface(Variables.objFont);
+        txtTitleBuoc1.setTypeface(Variables.objFont);
+
         return view;
     }
+
     public int GetPixelFromDips(float pixels) {
         // Get the screen's density scale
         final float scale = getResources().getDisplayMetrics().density;
@@ -77,5 +96,15 @@ public class RegisterFragmentStep1 extends Fragment implements ExpandableListVie
         parent.setItemChecked(index, true);
 
         return false;
+    }
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        switch (id) {
+            case R.id.register_step1_continute_button:
+                ((RegisterActivity) getActivity()).setPage(1);
+                break;
+        }
     }
 }

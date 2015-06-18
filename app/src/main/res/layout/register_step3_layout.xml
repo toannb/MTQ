@@ -8,99 +8,110 @@
     <LinearLayout
         android:id="@+id/textView_step3"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
         android:background="#26a587"
-        android:orientation="vertical">
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
 
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/txtBuoc3"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_marginLeft="30dp"
             android:text="@string/register_step3_title"
-            android:textColor="#ffffff"
-            android:textAppearance="?android:textAppearanceLarge" />
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/white" />
+
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/txtTitleBuoc3"
+            android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="30dp"
-            android:textColor="#ffffff"
-            android:text="@string/register_step3_content" />
+            android:text="@string/register_step3_content"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="215dp"
-        android:orientation="vertical"
-        android:layout_below="@id/textView_step3">
+        android:layout_below="@id/textView_step3"
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/register_step3_name_id"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_gravity="center_horizontal"
+            android:background="@color/white"
             android:drawableLeft="@drawable/ico_people"
-            android:paddingLeft="30dp"
             android:drawablePadding="15dp"
             android:hint="@string/register_step3_enter_name"
+            android:paddingLeft="30dp"
             android:textColorHint="@color/hint_color"
-            android:background="@color/white"
-            />
+            android:textSize="18dp" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#E7E8EB"
-            />
+            android:background="#E7E8EB" />
+
         <EditText
             android:id="@+id/register_step3_password_id"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_gravity="center_horizontal"
+            android:background="@color/white"
             android:drawableLeft="@drawable/ico_key"
-            android:paddingLeft="30dp"
             android:drawablePadding="15dp"
             android:hint="@string/register_step3_enter_password"
+            android:inputType="textPassword"
+            android:paddingLeft="30dp"
             android:textColorHint="@color/hint_color"
-            android:background="@color/white"
-            />
+            android:textSize="18dp" />
+
         <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#E7E8EB"
-        />
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E7E8EB" />
+
         <EditText
             android:id="@+id/register_step3_password_again_id"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_gravity="center_horizontal"
+            android:background="@color/white"
             android:drawableLeft="@drawable/ico_key"
-            android:paddingLeft="30dp"
             android:drawablePadding="15dp"
             android:hint="@string/register_step3_enter_password_again"
+            android:inputType="textPassword"
+            android:paddingLeft="30dp"
             android:textColorHint="@color/hint_color"
-            android:background="@color/white"
-            />
+            android:textSize="18dp" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#E7E8EB"
-            />
+            android:background="#E7E8EB" />
 
-        </LinearLayout>
+    </LinearLayout>
 
     <Button
         android:id="@+id/register_step3_complete_button_id"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginTop="5dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
         android:background="@drawable/login_button"
         android:drawableRight="@drawable/ico_angle_right_small"
-        android:paddingLeft="-170dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="25dp"
         android:paddingRight="25dp"
         android:text="@string/register_step3_complete_button"
         android:textColor="@color/white"
