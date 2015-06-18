@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.nganluong.config.Variables;
 import com.nganluong.manhthuongquan.R;
@@ -52,6 +53,18 @@ public class RegisterFragmentStep1 extends Fragment implements ExpandableListVie
         int width = metrics.widthPixels;
 
         mExpandableListView.setIndicatorBounds(width - GetPixelFromDips(50), width - GetPixelFromDips(10));
+        mExpandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+            int previousItem = -1;
+
+            @Override
+            public void onGroupExpand(int groupPosition) {
+                if(groupPosition != previousItem )
+                    mExpandableListView.collapseGroup(previousItem );
+
+                previousItem = groupPosition;
+                Toast.makeText(getActivity(), "Item: " + previousItem, Toast.LENGTH_SHORT).show();
+            }
+        });
 
         btnContinueRegister.setOnClickListener(this);
 
@@ -62,14 +75,14 @@ public class RegisterFragmentStep1 extends Fragment implements ExpandableListVie
         return view;
     }
 
-    public int GetPixelFromDips(float pixels) {
+    private int GetPixelFromDips(float pixels) {
         // Get the screen's density scale
         final float scale = getResources().getDisplayMetrics().density;
         // Convert the dps to pixels, based on density scale
         return (int) (pixels * scale + 0.5f);
     }
 
-    public ArrayList<Group> addListItem() {
+    private ArrayList<Group> addListItem() {
         ArrayList<Group> groupArrayList = new ArrayList<Group>();
 
         Group group1 = new Group();
