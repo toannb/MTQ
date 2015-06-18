@@ -144,10 +144,10 @@
                 android:id="@+id/register_step2_otp_layout_id"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
-                android:layout_marginBottom="20dp"
-                android:layout_alignParentBottom="true"
                 android:background="@drawable/bg_otp"
                 android:orientation="vertical"
                 android:visibility="visible">
@@ -166,6 +166,8 @@
                         android:layout_weight="1"
                         android:background="@color/white"
                         android:hint="@string/register_step2_otp_edittext_hint"
+                        android:lines="1"
+                        android:maxLines="1"
                         android:numeric="integer"
                         android:paddingLeft="10dp"
                         android:textColor="@color/gray"
@@ -176,27 +178,41 @@
                         android:id="@+id/btnOkOTP"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
+                        android:layout_gravity="bottom"
                         android:layout_marginRight="8dp"
                         android:background="@drawable/register_step2_1_ok_button_effect"
                         android:text="OK"
-                        android:layout_gravity="bottom"
                         android:textAppearance="?android:textAppearanceLarge"
                         android:textColor="@color/white"
                         android:textSize="23dp" />
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/txtErrorOTP"
-                    android:layout_width="185dp"
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="8dp"
-                    android:drawableLeft="@drawable/ico_mobile_2"
                     android:gravity="center_vertical"
-                    android:paddingRight="10dp"
-                    android:text="@string/register_step2_resend_code_otp"
-                    android:textColor="@color/white"
-                    android:textSize="15dp" />
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ico_mobile_2"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/txtErrorOTP"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/register_step2_resend_code_otp"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
 
             </LinearLayout>
         </RelativeLayout>

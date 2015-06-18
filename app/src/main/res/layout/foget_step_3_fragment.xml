@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_big"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -34,4 +35,70 @@
             android:text="@string/foget_tep_3_content"
             android:textColor="@color/white" />
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <EditText
+            android:id="@+id/editPassNew"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/line_1_foget_pass_step3"
+            android:gravity="center_vertical"
+            android:hint="@string/nhap_mat_khau_moi"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:textColor="@color/gray"
+            android:textColorHint="#d4d4d6"
+            android:textSize="18dp" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/editPassNew"
+            android:background="@color/color_line" />
+
+        <EditText
+            android:id="@+id/editConfirmPassNew"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/line1"
+            android:background="@drawable/line_2_foget_pass_step3"
+            android:gravity="center_vertical"
+            android:hint="@string/nhap_lai_mat_khau_moi"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:textColor="@color/gray"
+            android:textColorHint="#d4d4d6"
+            android:textSize="18dp" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/editConfirmPassNew"
+            android:background="@color/color_line" />
+
+        <TextView
+            android:id="@+id/txtConfirmChangePass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/line2"
+            android:background="@drawable/line_3_foget_pass_step3"
+            android:gravity="center"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:textColorHint="#d4d4d6"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
 </RelativeLayout>

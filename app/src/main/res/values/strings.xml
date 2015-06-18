@@ -41,6 +41,8 @@
     <string name="foget_tep_1_content">Nhập số điện thoại</string>
     <string name="foget_tep_2_content">Xác nhận số điện thoại</string>
     <string name="foget_tep_3_content">Tạo mật khẩu mới</string>
+    <string name="nhap_mat_khau_moi">Nhập mật khẩu mới</string>
+    <string name="nhap_lai_mat_khau_moi">Nhập lại mật khẩu mới</string>
 
     <string name="success_congratunation_text">Chúc mừng</string>
     <string name="success_content_1">Bạn đã đăng ký tài khoản thành công</string>

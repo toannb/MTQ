@@ -47,16 +47,16 @@
     <Button
         android:id="@+id/register_step1_continute_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_margin="5dp"
         android:background="@drawable/login_button_effect"
-        android:drawableRight="@drawable/ico_angle_right_small"
+        android:drawableRight="@drawable/ico_angle_right"
         android:gravity="left|center_vertical"
         android:paddingLeft="25dp"
         android:paddingRight="25dp"
         android:text="@string/register_button_continue"
         android:textColor="@color/white"
-        android:textSize="23dp" />
+        android:textSize="25dp" />
 
 </RelativeLayout>
