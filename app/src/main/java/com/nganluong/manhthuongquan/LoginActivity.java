@@ -59,7 +59,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         if (editPhoneInLogin.getText().toString().length() > 0) {
             return true;
         } else {
-            Toast.makeText(getApplicationContext(), "Bạn cần nhập số điện thoại", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), getResources().getString(R.string.error_passwords_null), Toast.LENGTH_SHORT).show();
             return false;
         }
     }
@@ -72,19 +72,19 @@ public class LoginActivity extends Activity implements View.OnClickListener {
                     if(editPasswords.getText().toString().matches(".*\\d.*")){
                         return true;
                     } else{
-                        Toast.makeText(getApplicationContext(), "Mật khẩu phải chứa 1 chữ số", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), getResources().getString(R.string.error_passwords_chuaso), Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 } else {
-                    Toast.makeText(getApplicationContext(), "Chữ cái đầu tiên phải là chữ in hoa", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.error_passwords_inhoa), Toast.LENGTH_SHORT).show();
                     return false;
                 }
             } else {
-                Toast.makeText(getApplicationContext(), "Mật khẩu phải từ 6 đến 8 ký tự", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), getResources().getString(R.string.error_passwords_doai6den8), Toast.LENGTH_SHORT).show();
                 return false;
             }
         } else {
-            Toast.makeText(getApplicationContext(), "Bạn cần nhập mật khẩu", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), getResources().getString(R.string.error_passwords_null), Toast.LENGTH_SHORT).show();
             return false;
         }
     }

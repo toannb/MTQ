@@ -50,6 +50,13 @@
         biểu tượng dưới đây</string>
     <string name="success_button_ignore">Bỏ qua</string>
 
+    <string name="error_passwords_nhap_lai_pass">Bạn cần nhập lại mật khẩu</string>
+    <string name="error_passwords_null">Bạn cần nhập mật khẩu</string>
+    <string name="error_passwords_khongtrungnhau">Mật khẩu cần giống nhau</string>
+    <string name="error_passwords_chuaso">Mật khẩu phải chứa 1 chữ số</string>
+    <string name="error_passwords_inhoa">Chữ cái đầu tiên phải là chữ in hoa</string>
+    <string name="error_passwords_doai6den8">Mật khẩu phải từ 6 đến 8 ký tự</string>
+
     <string name="home_page_title">Trang chủ</string>
     <string name="home_page_user_title">Tài khoản</string>
     <string name="home_page_inform_title">Thông báo</string>

@@ -48,11 +48,11 @@ public class FogetPassFragmentStep3 extends Fragment implements View.OnClickList
             if (editConfirmPassNew.getText().toString().length() > 0) {
                 return true;
             } else {
-                Toast.makeText(getActivity(), "Bạn cần nhập lại mật khẩu", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), getResources().getString(R.string.error_passwords_nhap_lai_pass), Toast.LENGTH_SHORT).show();
                 return false;
             }
         } else {
-            Toast.makeText(getActivity(), "Bạn cần nhập mật khẩu", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), getResources().getString(R.string.error_passwords_null), Toast.LENGTH_SHORT).show();
             return false;
         }
     }
@@ -64,7 +64,7 @@ public class FogetPassFragmentStep3 extends Fragment implements View.OnClickList
         if (pass.equals(passConfirm)) {
             return true;
         } else {
-            Toast.makeText(getActivity(), "Mật khẩu cần giống nhau", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), getResources().getString(R.string.error_passwords_khongtrungnhau), Toast.LENGTH_SHORT).show();
             return false;
         }
     }
@@ -77,19 +77,19 @@ public class FogetPassFragmentStep3 extends Fragment implements View.OnClickList
                     if(editPassNew.getText().toString().matches(".*\\d.*")){
                         return true;
                     } else{
-                        Toast.makeText(getActivity(), "Mật khẩu phải chứa 1 chữ số", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), getResources().getString(R.string.error_passwords_chuaso), Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 } else {
-                    Toast.makeText(getActivity(), "Chữ cái đầu tiên phải là chữ in hoa", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), getResources().getString(R.string.error_passwords_inhoa), Toast.LENGTH_SHORT).show();
                     return false;
                 }
             } else {
-                Toast.makeText(getActivity(), "Mật khẩu phải từ 6 đến 8 ký tự", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), getResources().getString(R.string.error_passwords_doai6den8), Toast.LENGTH_SHORT).show();
                 return false;
             }
         } else {
-            Toast.makeText(getActivity(), "Bạn cần nhập mật khẩu", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), getResources().getString(R.string.error_passwords_null), Toast.LENGTH_SHORT).show();
             return false;
         }
     }
