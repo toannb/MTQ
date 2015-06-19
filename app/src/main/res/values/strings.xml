@@ -69,7 +69,7 @@
     <string name="home_page_list_shop_instalment">Danh sách\n cửa hàng trả góp</string>
     <string name="home_page_news_mtq">Tin tức\n MTQ</string>
     <string name="home_page_help">Hướng dẫn/\nTrợ giúp</string>
-    <string name="home_page_contact">Liên hệ</string>
+    <string name="home_page_contact">Liên hệ\n </string>
     <string name="home_page_hello_user">Xin chào %1$s,</string>
     <string name="home_page_user_number">Hiện có &lt;font color=\'#FF0000\'>%1$d&lt;/font> người duyệt yêu cầu vay tiền mặt\n Bạn chưa có yêu cầu vay mua trả góp</string>
 </resources>
