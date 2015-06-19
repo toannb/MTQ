@@ -35,7 +35,8 @@
         <activity
             android:name=".HomePageActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".FogetPasswordsActivity"
+        <activity
+            android:name=".FogetPasswordsActivity"
             android:screenOrientation="portrait" />
     </application>
 

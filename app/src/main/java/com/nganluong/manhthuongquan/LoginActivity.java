@@ -127,6 +127,10 @@ public class LoginActivity extends Activity implements View.OnClickListener {
             case R.id.login_button:
                 if (checkPhoneNumber() == true && checkPasswords() == true) {
                     Toast.makeText(getApplicationContext(), "Mật khẩu đã được chấp nhận", Toast.LENGTH_SHORT).show();
+
+                    Intent intentLogin = new Intent(getApplicationContext(), HomePageActivity.class);
+                    startActivity(intentLogin);
+                    finish();
                 }
                 break;
         }

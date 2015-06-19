@@ -48,7 +48,7 @@
     <string name="success_content_1">Bạn đã đăng ký tài khoản thành công</string>
     <string name="success_content_2">Để gửi được yêu cầu vay, vui lòng điền đầy đủ thông tin cơ bản bằng cách chạm vào
         biểu tượng dưới đây</string>
-    <string name="success_button_ignore">Bỏ qua</string>
+    <string name="success_button_ignore">BỎ QUA</string>
 
     <string name="error_passwords_nhap_lai_pass">Bạn cần nhập lại mật khẩu</string>
     <string name="error_passwords_null">Bạn cần nhập mật khẩu</string>
@@ -71,6 +71,5 @@
     <string name="home_page_help">Hướng dẫn/\nTrợ giúp</string>
     <string name="home_page_contact">Liên hệ</string>
     <string name="home_page_hello_user">Xin chào %1$s,</string>
-    <string name="home_page_user_number">Hiện có &lt;font color=\'#FF0000\'>%1$d&lt;/font> người duyệt yêu cầu vay tiền mặt\n
-        Bạn chưa có yêu cầu vay mua trả góp</string>
+    <string name="home_page_user_number">Hiện có &lt;font color=\'#FF0000\'>%1$d&lt;/font> người duyệt yêu cầu vay tiền mặt\n Bạn chưa có yêu cầu vay mua trả góp</string>
 </resources>

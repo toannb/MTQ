@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.text.Html;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,27 +24,26 @@ public class HomeTabFragment extends Fragment {
 
     private GridView mGridView;
     private TextView mHomePageTitle;
-    private TextView tvUserName;
-    private TextView tvUserNumber;
+    private TextView txtUserName;
+    private TextView txtUserNumber;
 
     private String mUserName;
-    private int mUserNumber=5;
+    private int mUserNumber = 5;
 
     private ArrayList<ItemHomePage> arrItemHomePage = new ArrayList<>();
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.home_page_fragment, container, false);
 
-        arrItemHomePage.clear();
         initDataView();
         initView(view);
-
-
         return view;
     }
 
     private void initDataView() {
+        arrItemHomePage.clear();
         arrItemHomePage.add(new ItemHomePage(this.getResources().getString(R.string.home_page_make_request_loan_cash), R.drawable.ico_money));
         arrItemHomePage.add(new ItemHomePage(this.getResources().getString(R.string.home_page_history_loan_cash), R.drawable.ico_history));
         arrItemHomePage.add(new ItemHomePage(this.getResources().getString(R.string.home_page_list_loaner), R.drawable.ico_loaners_list));
@@ -60,19 +58,18 @@ public class HomeTabFragment extends Fragment {
     private void initView(View rootView){
         mGridView = (GridView) rootView.findViewById(R.id.home_page_gridview_id);
         mGridView.setAdapter(new GridViewAdapter(getActivity().getApplicationContext(), 0, arrItemHomePage));
-        Log.d("home_tab_initView", "initView()");
 
         mHomePageTitle = (TextView) rootView.findViewById(R.id.home_page_title_id);
         mHomePageTitle.setTypeface(Variables.objFont);
 
-        tvUserName = (TextView) rootView.findViewById(R.id.home_page_user_name_id);
-        tvUserName.setTypeface(Variables.objFont);
+        txtUserName = (TextView) rootView.findViewById(R.id.home_page_user_name_id);
+        txtUserName.setTypeface(Variables.objFont);
 
         String strHelloUser = getResources().getString(R.string.home_page_hello_user);
-        tvUserName.setText(String.format(strHelloUser, mUserName));
+        txtUserName.setText(String.format(strHelloUser, mUserName));
 
-        tvUserNumber = (TextView) rootView.findViewById(R.id.home_page_user_number_id);
+        txtUserNumber = (TextView) rootView.findViewById(R.id.home_page_user_number_id);
         String strUserInform = getResources().getString(R.string.home_page_user_number);
-        tvUserNumber.setText(Html.fromHtml(String.format(strUserInform, mUserNumber)));
+        txtUserNumber.setText(Html.fromHtml(String.format(strUserInform, mUserNumber)));
     }
 }

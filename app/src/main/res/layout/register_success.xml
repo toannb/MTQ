@@ -2,21 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_centerInParent="true"
-    android:background="@drawable/bg_big">
-    
+    android:background="@drawable/bg_big"
+    android:orientation="vertical">
+
     <TextView
+        android:id="@+id/txtTitleSuccess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="100dp"
         android:text="@string/success_congratunation_text"
         android:textColor="@color/white"
-        android:textSize="26dp"
-        android:textStyle="bold"
-        />
-    <TextView 
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/name_congratunation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,53 +25,55 @@
         android:text=""
         android:textColor="@color/white"
         android:textSize="26dp"
-        android:textStyle="bold"
-        />
-    
-    <TextView 
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtSuccessLine1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
-        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
         android:text="@string/success_content_1"
-        />
-    <TextView 
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/txtSuccessLine2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
-        android:textColor="@color/white"
+        android:textSize="14dp"
         android:text="@string/success_content_2"
-        />
-    
-    <ImageView 
+        android:textColor="@color/white" />
+
+    <ImageView
         android:id="@+id/edit_information"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/ico_pen"/>
-    
-    <RelativeLayout 
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ico_pen" />
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        >
-        <Button 
+        android:layout_marginBottom="50dp">
+
+        <Button
             android:id="@+id/success_ignore_button"
             android:layout_width="wrap_content"
-            android:layout_height="35dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="30dp"
             android:background="@drawable/success_ignore_button"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
             android:text="@string/success_button_ignore"
-            android:textColor="@color/white"
-            />
+            android:textColor="@color/white" />
     </RelativeLayout>
-    
+
 </LinearLayout>

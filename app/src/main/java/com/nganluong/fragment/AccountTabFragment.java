@@ -19,7 +19,6 @@ public class AccountTabFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.register_step1_layout, container, false);
 
-
         return view;
     }
 

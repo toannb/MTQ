@@ -23,12 +23,12 @@
                 android:id="@+id/home_page_title_id"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
-                android:layout_weight="1"
                 android:layout_gravity="center"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/home_page_title"
                 android:textColor="@color/white"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
 
             <ImageButton
                 android:id="@+id/home_page_refresh_button_id"
@@ -36,54 +36,51 @@
                 android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:layout_marginRight="10dp"
-                android:src="@drawable/ico_refresh"
-                android:background="@null"/>
+                android:background="@null"
+                android:src="@drawable/ico_refresh" />
         </LinearLayout>
 
         <GridView
             android:id="@+id/home_page_gridview_id"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:columnWidth="90dp"
             android:background="@null"
+            android:columnWidth="90dp"
             android:gravity="center"
             android:horizontalSpacing="1dp"
             android:numColumns="3"
             android:stretchMode="columnWidth"
             android:verticalSpacing="1dp">
-
         </GridView>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
-            android:orientation="vertical"
-            android:background="@color/white">
+            android:background="@color/white"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/home_page_user_name_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
                 android:layout_marginLeft="25dp"
-                android:textSize="25dp"
-                android:textColor="@color/gray"
-                android:textStyle="bold"
+                android:layout_marginTop="15dp"
                 android:text="@string/home_page_hello_user"
-                />
+                android:textColor="@color/gray"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/home_page_user_number_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="25dp"
                 android:layout_marginBottom="15dp"
-                android:textSize="15dp"
-                android:textColor="@color/gray"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
                 android:text="@string/home_page_user_number"
-                />
+                android:textColor="@color/gray"
+                android:textSize="15dp" />
 
         </LinearLayout>
     </LinearLayout>
-
 </RelativeLayout>
