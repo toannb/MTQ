@@ -13,15 +13,15 @@
         android:background="#26a587"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        android:paddingBottom="9.5dp"
-        android:paddingTop="9.5dp">
+        android:paddingBottom="@dimen/foget_passwords_step1_padding_bottom"
+        android:paddingTop="@dimen/foget_passwords_step1_padding_top">
 
         <TextView
             android:id="@+id/txtBuoc1FogetPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="@dimen/foget_passwords_txtBuoc1FogetPass_margin_left"
             android:text="@string/foget_tep_1_title"
             android:textAppearance="?android:textAppearanceLarge"
             android:textColor="@color/white" />
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="@dimen/foget_passwords_txtTitleBuoc1FogetPass_margin_left"
             android:text="@string/foget_tep_1_content"
             android:textColor="@color/white" />
     </LinearLayout>
@@ -55,12 +55,12 @@
                 android:layout_width="45dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="@dimen/foget_passwords_txtDauSo_marginLeft"
                 android:gravity="center"
                 android:text="+84"
                 android:textAppearance="?android:textAppearanceLarge"
                 android:textColor="@color/gray"
-                android:textSize="18dp" />
+                android:textSize="@dimen/foget_passwords_textsize_txtDauSo" />
 
             <EditText
                 android:id="@+id/editPhoneFogetPass"
@@ -70,17 +70,19 @@
                 android:layout_weight="3"
                 android:background="@null"
                 android:hint="@string/register_step2_1_phone_hint"
+                android:lines="1"
+                android:maxLines="1"
                 android:numeric="integer"
                 android:textColor="@color/gray"
                 android:textColorHint="#d4d4d6"
-                android:textSize="18dp" />
+                android:textSize="@dimen/foget_passwords_textsize_txtDauSo" />
 
             <ImageView
                 android:id="@+id/btnDeletePhoneFogetPass"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="@dimen/foget_passwords_deletePhone_margin_right"
                 android:src="@drawable/ico_erase"
                 android:visibility="visible" />
 
@@ -94,6 +96,6 @@
             android:text="OK"
             android:textAppearance="?android:textAppearanceLarge"
             android:textColor="@color/white"
-            android:textSize="23dp" />
+            android:textSize="@dimen/foget_passwords_txtOK_marginLeft" />
     </LinearLayout>
 </RelativeLayout>

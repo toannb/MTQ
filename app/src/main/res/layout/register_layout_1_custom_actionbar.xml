@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="@dimen/register_top_margin_left"
         android:background="@drawable/registor_close_button"
         android:src="@drawable/ico_angle_left" />
 
@@ -20,7 +20,7 @@
         android:layout_centerInParent="true"
         android:text="Đăng ký"
         android:textColor="@color/white"
-        android:textSize="24sp" />
+        android:textSize="@dimen/register_top_textsize_title" />
 
     <ImageButton
         android:id="@+id/cancel_register"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="25dp"
+        android:layout_marginRight="@dimen/register_top_margin_right"
         android:background="@drawable/registor_close_button"
         android:src="@drawable/ico_close" />
 </RelativeLayout>

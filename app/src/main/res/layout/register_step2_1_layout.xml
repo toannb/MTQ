@@ -13,15 +13,15 @@
         android:background="#26a587"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        android:paddingBottom="9.5dp"
-        android:paddingTop="9.5dp">
+        android:paddingBottom="@dimen/register_step2_padding_bottom"
+        android:paddingTop="@dimen/registerstep2_padding_top">
 
         <TextView
             android:id="@+id/txtBuoc2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="@dimen/register_txtBuoc2FogetPass_margin_left"
             android:text="@string/register_step2_title"
             android:textAppearance="?android:textAppearanceLarge"
             android:textColor="@color/white" />
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="@dimen/register_txtTitleBuoc2FogetPass_margin_left"
             android:text="@string/register_step2_content"
             android:textColor="@color/white" />
     </LinearLayout>
@@ -55,12 +55,12 @@
                 android:layout_width="45dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="@dimen/register_txtDauSo2_marginLeft"
                 android:gravity="center"
                 android:text="+84"
                 android:textAppearance="?android:textAppearanceLarge"
                 android:textColor="@color/gray"
-                android:textSize="18dp" />
+                android:textSize="@dimen/register_textsize2_txtDauSo" />
 
             <EditText
                 android:id="@+id/register_step2_1_phone_number"
@@ -73,7 +73,7 @@
                 android:numeric="integer"
                 android:textColor="@color/gray"
                 android:textColorHint="#d4d4d6"
-                android:textSize="18dp" />
+                android:textSize="@dimen/register_textsize2_txtDauSo" />
 
             <ImageView
                 android:id="@+id/register_step2_erase_id"
@@ -94,7 +94,7 @@
             android:text="OK"
             android:textAppearance="?android:textAppearanceLarge"
             android:textColor="@color/white"
-            android:textSize="23dp" />
+            android:textSize="@dimen/register_txtOK2_marginLeft" />
     </LinearLayout>
 
     <RelativeLayout
@@ -107,7 +107,7 @@
             android:id="@+id/register_step2_otp_inform"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="@dimen/register_formOTP_margin_left"
             android:background="@color/white_smoke"
             android:orientation="vertical">
 
@@ -116,13 +116,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="@dimen/register_formOTP_text1_margin_left"
+                android:layout_marginRight="@dimen/register_formOTP_text1_margin_right"
+                android:layout_marginTop="@dimen/register_formOTP_text1_margin_top"
                 android:gravity="left"
                 android:text="@string/register_step2_verity_text"
                 android:textColor="@color/gray"
-                android:textSize="15dp"
+                android:textSize="@dimen/register_formOTP_text1_size"
                 android:visibility="visible" />
 
             <TextView
@@ -131,13 +131,13 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/register_step2_otp_textview1"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="@dimen/register_formOTP_text1_margin_left"
+                android:layout_marginRight="@dimen/register_formOTP_text1_margin_right"
+                android:layout_marginTop="@dimen/register_formOTP_text1_margin_top"
                 android:gravity="left"
                 android:text="@string/register_step2_verity_text_2"
                 android:textColor="@color/gray"
-                android:textSize="15dp"
+                android:textSize="@dimen/register_formOTP_text1_size"
                 android:visibility="visible" />
 
             <LinearLayout
@@ -145,9 +145,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="20dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginBottom="@dimen/register_formOTPnho_margin_bottom"
+                android:layout_marginLeft="@dimen/register_formOTPnho_margin_left"
+                android:layout_marginRight="@dimen/register_formOTPnho_margin_right"
                 android:background="@drawable/bg_otp"
                 android:orientation="vertical"
                 android:visibility="visible">
@@ -169,22 +169,22 @@
                         android:lines="1"
                         android:maxLines="1"
                         android:numeric="integer"
-                        android:paddingLeft="10dp"
+                        android:paddingLeft="@dimen/register_fogetOTP_padding_left"
                         android:textColor="@color/gray"
                         android:textColorHint="@color/hint_color"
-                        android:textSize="18dp" />
+                        android:textSize="@dimen/register_textsize_fogetOTP" />
 
                     <Button
                         android:id="@+id/btnOkOTP"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_gravity="bottom"
-                        android:layout_marginRight="8dp"
+                        android:layout_marginRight="@dimen/register_fogetOKOTP_margin_right"
                         android:background="@drawable/register_step2_1_ok_button_effect"
                         android:text="OK"
                         android:textAppearance="?android:textAppearanceLarge"
                         android:textColor="@color/white"
-                        android:textSize="23dp" />
+                        android:textSize="@dimen/register_textsize_fogetOKOTP" />
                 </LinearLayout>
 
 
@@ -210,7 +210,7 @@
                         android:layout_marginLeft="10dp"
                         android:text="@string/register_step2_resend_code_otp"
                         android:textColor="@color/white"
-                        android:textSize="15dp" />
+                        android:textSize="@dimen/register_txtFogetPassErrorOTP_size" />
                 </LinearLayout>
 
 

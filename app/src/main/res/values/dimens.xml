@@ -1,5 +1,111 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="login_top_margin_left">20dp</dimen>
+    <dimen name="login_top_margin_right">20dp</dimen>
+    <dimen name="login_top_margin_top">50dp</dimen>
+    <dimen name="login_line_1_margin_top">70dp</dimen>
+    <dimen name="login_txtDauSo_margin_left">25dp</dimen>
+    <dimen name="login_textsize_txtDauSo">18dp</dimen>
+    <dimen name="login_txtPhone_padding_left">5dp</dimen>
+    <dimen name="login_txtPass_padding_left">30dp</dimen>
+    <dimen name="login_txtPass_padding_right">25dp</dimen>
+    <dimen name="login_txtsize_txtPass">18dp</dimen>
+    <dimen name="login_icon_eyse_margin_right">20dp</dimen>
+    <dimen name="login_btnLogin_margin_left">5dp</dimen>
+    <dimen name="login_btnLogin_margin_right">5dp</dimen>
+    <dimen name="login_btnLogin_margin_top">5dp</dimen>
+    <dimen name="login_btnLogin_padding_left">25dp</dimen>
+    <dimen name="login_btnLogin_padding_right">25dp</dimen>
+    <dimen name="login_txtsize_btnLogin">28dp</dimen>
+    <dimen name="login_bottom_margin_left">20dp</dimen>
+    <dimen name="login_bottom_margin_right">20dp</dimen>
+    <dimen name="login_bottom_margin_top">20dp</dimen>
+    <dimen name="login_bottom_textsize">8pt</dimen>
+
+    <dimen name="foget_passwords_top_margin_left">10dp</dimen>
+    <dimen name="foget_passwords_top_textsize_title">24sp</dimen>
+    <dimen name="foget_passwords_top_margin_right">25dp</dimen>
+    <dimen name="foget_passwords_top_activity">65dp</dimen>
+    <dimen name="foget_passwords_step1_padding_bottom">9.5dp</dimen>
+    <dimen name="foget_passwords_step1_padding_top">9.5dp</dimen>
+    <dimen name="foget_passwords_txtBuoc1FogetPass_margin_left">30dp</dimen>
+    <dimen name="foget_passwords_txtTitleBuoc1FogetPass_margin_left">30dp</dimen>
+    <dimen name="foget_passwords_txtDauSo_marginLeft">25dp</dimen>
+    <dimen name="foget_passwords_textsize_txtDauSo">18dp</dimen>
+    <dimen name="foget_passwords_deletePhone_margin_right">10dp</dimen>
+    <dimen name="foget_passwords_txtOK_marginLeft">23dp</dimen>
+
+    <dimen name="foget_passwords_step2_padding_bottom">9.5dp</dimen>
+    <dimen name="foget_passwords_step2_padding_top">9.5dp</dimen>
+    <dimen name="foget_passwords_txtBuoc2FogetPass_margin_left">30dp</dimen>
+    <dimen name="foget_passwords_txtTitleBuoc2FogetPass_margin_left">30dp</dimen>
+    <dimen name="foget_passwords_txtDauSo2_marginLeft">25dp</dimen>
+    <dimen name="foget_passwords_textsize2_txtDauSo">18dp</dimen>
+    <dimen name="foget_passwords_txtOK2_marginLeft">23dp</dimen>
+    <dimen name="foget_passwords_formOTP_margin_left">10dp</dimen>
+    <dimen name="foget_passwords_formOTP_text1_margin_left">25dp</dimen>
+    <dimen name="foget_passwords_formOTP_text1_margin_right">10dp</dimen>
+    <dimen name="foget_passwords_formOTP_text1_margin_top">20dp</dimen>
+    <dimen name="foget_passwords_formOTP_text1_size">15dp</dimen>
+    <dimen name="foget_passwords_formOTPnho_margin_left">25dp</dimen>
+    <dimen name="foget_passwords_formOTPnho_margin_right">25dp</dimen>
+    <dimen name="foget_passwords_formOTPnho_margin_bottom">20dp</dimen>
+    <dimen name="foget_passwords_fogetOTP_padding_left">10dp</dimen>
+    <dimen name="foget_passwords_textsize_fogetOTP">18dp</dimen>
+    <dimen name="foget_passwords_fogetOKOTP_margin_right">8dp</dimen>
+    <dimen name="foget_passwords_textsize_fogetOKOTP">23dp</dimen>
+    <dimen name="foget_passwords_txtFogetPassErrorOTP_size">15dp</dimen>
+
+    <dimen name="foget_passwords_step3_padding_bottom">10dp</dimen>
+    <dimen name="foget_passwords_step3_padding_top">10dp</dimen>
+    <dimen name="foget_passwords_txtBuoc3FogetPass_margin_left">30dp</dimen>
+    <dimen name="foget_passwords_txtTitleBuoc3FogetPass_margin_left">30dp</dimen>
+    <dimen name="foget_passwords_box_margin_left">40dp</dimen>
+    <dimen name="foget_passwords_box_margin_right">40dp</dimen>
+    <dimen name="forget_passwords_padding_left">15dp</dimen>
+    <dimen name="forget_passwords_textsize">18dp</dimen>
+    <dimen name="forget_passwords_textsize_OK">25dp</dimen>
+
+    <dimen name="register_top_margin_left">10dp</dimen>
+    <dimen name="register_top_textsize_title">24sp</dimen>
+    <dimen name="register_top_margin_right">25dp</dimen>
+    <dimen name="register_step1_child_margin_left">50dp</dimen>
+    <dimen name="register_step1_childtext_margin">10dp</dimen>
+    <dimen name="register_step1_childtext_textsize">16dp</dimen>
+    <dimen name="register_step1_padding_bottom">15dp</dimen>
+    <dimen name="register_step1_padding_top">15dp</dimen>
+    <dimen name="register_step1_txtBuoc1FogetPass_margin_left">30dp</dimen>
+    <dimen name="register_step1_txtTitleBuoc1FogetPass_margin_left">30dp</dimen>
+    <dimen name="register_step1_listview_margin_bottom">52dp</dimen>
+    <dimen name="register_step1_btnCountinue_margin">5dp</dimen>
+    <dimen name="register_step1_btnCountinue_padding_left">25dp</dimen>
+    <dimen name="register_step1_btnCountinue_padding_right">25dp</dimen>
+    <dimen name="register_step1_btnCountinue_textsize">25dp</dimen>
+
+    <dimen name="register_step2_padding_bottom">9.5dp</dimen>
+    <dimen name="registerstep2_padding_top">9.5dp</dimen>
+    <dimen name="register_txtBuoc2FogetPass_margin_left">30dp</dimen>
+    <dimen name="register_txtTitleBuoc2FogetPass_margin_left">30dp</dimen>
+    <dimen name="register_txtDauSo2_marginLeft">25dp</dimen>
+    <dimen name="register_textsize2_txtDauSo">18dp</dimen>
+    <dimen name="register_txtOK2_marginLeft">23dp</dimen>
+    <dimen name="register_formOTP_margin_left">10dp</dimen>
+    <dimen name="register_formOTP_text1_margin_left">25dp</dimen>
+    <dimen name="register_formOTP_text1_margin_right">10dp</dimen>
+    <dimen name="register_formOTP_text1_margin_top">20dp</dimen>
+    <dimen name="register_formOTP_text1_size">15dp</dimen>
+    <dimen name="register_formOTPnho_margin_left">25dp</dimen>
+    <dimen name="register_formOTPnho_margin_right">25dp</dimen>
+    <dimen name="register_formOTPnho_margin_bottom">20dp</dimen>
+    <dimen name="register_fogetOTP_padding_left">10dp</dimen>
+    <dimen name="register_textsize_fogetOTP">18dp</dimen>
+    <dimen name="register_fogetOKOTP_margin_right">8dp</dimen>
+    <dimen name="register_textsize_fogetOKOTP">23dp</dimen>
+    <dimen name="register_txtFogetPassErrorOTP_size">15dp</dimen>
+
+    <dimen name="register_step3_padding_bottom">10dp</dimen>
+    <dimen name="register_step3_padding_top">10dp</dimen>
+    <dimen name="register_txtBuoc3FogetPass_margin_left">30dp</dimen>
+    <dimen name="register_txtTitleBuoc3FogetPass_margin_left">30dp</dimen>
+
 </resources>

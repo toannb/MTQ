@@ -12,15 +12,15 @@
         android:background="#26a587"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        android:paddingBottom="15dp"
-        android:paddingTop="15dp">
+        android:paddingBottom="@dimen/register_step1_padding_bottom"
+        android:paddingTop="@dimen/register_step1_padding_top">
 
         <TextView
             android:id="@+id/txtBuoc1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="@dimen/register_step1_txtBuoc1FogetPass_margin_left"
             android:text="@string/register_step1_title"
             android:textAppearance="?android:textAppearanceLarge"
             android:textColor="@color/white" />
@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="@dimen/register_step1_txtTitleBuoc1FogetPass_margin_left"
             android:text="@string/register_step1_content"
             android:textColor="@color/white" />
     </LinearLayout>
@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/textView_step1"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="@dimen/register_step1_listview_margin_bottom"
         android:choiceMode="singleChoice"
         android:groupIndicator="@null" />
 
@@ -49,14 +49,14 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:layout_margin="5dp"
+        android:layout_margin="@dimen/register_step1_btnCountinue_margin"
         android:background="@drawable/login_button_effect"
         android:drawableRight="@drawable/ico_angle_right"
         android:gravity="left|center_vertical"
-        android:paddingLeft="25dp"
-        android:paddingRight="25dp"
+        android:paddingLeft="@dimen/register_step1_btnCountinue_padding_left"
+        android:paddingRight="@dimen/register_step1_btnCountinue_padding_right"
         android:text="@string/register_button_continue"
         android:textColor="@color/white"
-        android:textSize="25dp" />
+        android:textSize="@dimen/register_step1_btnCountinue_textsize" />
 
 </RelativeLayout>
