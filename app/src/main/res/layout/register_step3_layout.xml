@@ -41,56 +41,88 @@
         android:layout_below="@id/textView_step3"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/register_step3_name_id"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_gravity="center_horizontal"
-            android:background="@color/white"
-            android:drawableLeft="@drawable/ico_people"
-            android:drawablePadding="15dp"
-            android:hint="@string/register_step3_enter_name"
-            android:paddingLeft="30dp"
-            android:textColorHint="@color/hint_color"
-            android:textSize="@dimen/register_textsize_fogetOTP" />
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="7dp"
+                android:layout_height="70dp"
+                android:background="@color/color_line_1_register" />
+
+            <EditText
+                android:id="@+id/register_step3_name_id"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ico_people"
+                android:drawablePadding="15dp"
+                android:hint="@string/register_step3_enter_name"
+                android:paddingLeft="30dp"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/register_textsize_fogetOTP" />
+        </LinearLayout>
+
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="#E7E8EB" />
 
-        <EditText
-            android:id="@+id/register_step3_password_id"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_gravity="center_horizontal"
-            android:background="@color/white"
-            android:drawableLeft="@drawable/ico_key"
-            android:drawablePadding="15dp"
-            android:hint="@string/register_step3_enter_password"
-            android:inputType="textPassword"
-            android:paddingLeft="30dp"
-            android:textColorHint="@color/hint_color"
-            android:textSize="@dimen/register_textsize_fogetOTP" />
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="7dp"
+                android:layout_height="70dp"
+                android:background="@color/color_line_2_register" />
+
+            <EditText
+                android:id="@+id/register_step3_password_id"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ico_key"
+                android:drawablePadding="15dp"
+                android:hint="@string/register_step3_enter_password"
+                android:inputType="textPassword"
+                android:paddingLeft="30dp"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/register_textsize_fogetOTP" />
+        </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="#E7E8EB" />
 
-        <EditText
-            android:id="@+id/register_step3_password_again_id"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_gravity="center_horizontal"
-            android:background="@color/white"
-            android:drawableLeft="@drawable/ico_key"
-            android:drawablePadding="15dp"
-            android:hint="@string/register_step3_enter_password_again"
-            android:inputType="textPassword"
-            android:paddingLeft="30dp"
-            android:textColorHint="@color/hint_color"
-            android:textSize="@dimen/register_textsize_fogetOTP" />
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="7dp"
+                android:layout_height="70dp"
+                android:background="@color/color_line_3_register" />
+
+            <EditText
+                android:id="@+id/register_step3_password_again_id"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ico_key"
+                android:drawablePadding="15dp"
+                android:hint="@string/register_step3_enter_password_again"
+                android:inputType="textPassword"
+                android:paddingLeft="30dp"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/register_textsize_fogetOTP" />
+        </LinearLayout>
+
 
         <View
             android:layout_width="match_parent"

@@ -10,4 +10,7 @@
     <color name="bg_close_actionbar">#47888F</color>
     <color name="color_register_and_forget">#667180</color>
     <color name="color_line">#606060</color>
+    <color name="color_line_1_register">#1c727a</color>
+    <color name="color_line_2_register">#91cea0</color>
+    <color name="color_line_3_register">#26a587</color>
 </resources>

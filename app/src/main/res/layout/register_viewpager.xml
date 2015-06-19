@@ -27,9 +27,9 @@
             android:layout_gravity="center_vertical"
             android:background="@drawable/circle_page_indicator_selector"
             android:padding="10dip"
-            app:fillColor="#FFFFFF"
+            app:fillColor="@color/white"
             app:radius="4dp"
-            app:strokeColor="#FFFFFF"
+            app:strokeColor="@color/white"
             app:strokeWidth="1dp" />
 
         <View
