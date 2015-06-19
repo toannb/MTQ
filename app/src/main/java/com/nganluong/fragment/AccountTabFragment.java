@@ -17,7 +17,7 @@ public class AccountTabFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.register_step1_layout, container, false);
+        View view = inflater.inflate(R.layout.account_tab_fragment, container, false);
 
         return view;
     }

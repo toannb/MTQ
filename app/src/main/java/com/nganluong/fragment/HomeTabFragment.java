@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.nganluong.adapter.GridViewAdapter;
 import com.nganluong.bean.ItemHomePage;
@@ -20,9 +21,11 @@ import java.util.ArrayList;
 /**
  * Created by ToanNB on 6/17/2015.
  */
-public class HomeTabFragment extends Fragment {
+public class HomeTabFragment extends Fragment implements GridViewAdapter.OnItemBoxClickListener {
 
     private GridView mGridView;
+    private GridViewAdapter mGridViewAdapter;
+
     private TextView mHomePageTitle;
     private TextView txtUserName;
     private TextView txtUserNumber;
@@ -57,7 +60,9 @@ public class HomeTabFragment extends Fragment {
 
     private void initView(View rootView){
         mGridView = (GridView) rootView.findViewById(R.id.home_page_gridview_id);
-        mGridView.setAdapter(new GridViewAdapter(getActivity().getApplicationContext(), 0, arrItemHomePage));
+        mGridViewAdapter = new GridViewAdapter(getActivity().getApplicationContext(), 0, arrItemHomePage);
+        mGridView.setAdapter(mGridViewAdapter);
+        mGridViewAdapter.setOnItemBoxClickListener(this);
 
         mHomePageTitle = (TextView) rootView.findViewById(R.id.home_page_title_id);
         mHomePageTitle.setTypeface(Variables.objFont);
@@ -71,5 +76,10 @@ public class HomeTabFragment extends Fragment {
         txtUserNumber = (TextView) rootView.findViewById(R.id.home_page_user_number_id);
         String strUserInform = getResources().getString(R.string.home_page_user_number);
         txtUserNumber.setText(Html.fromHtml(String.format(strUserInform, mUserNumber)));
+    }
+
+    @Override
+    public void onItemBoxClick(int position, ViewGroup viewParent) {
+        Toast.makeText(getActivity(), "Item: " + position, Toast.LENGTH_SHORT).show();
     }
 }
