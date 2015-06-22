@@ -12,6 +12,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.nganluong.config.Variables;
+import com.nganluong.util.Methods;
+
+import java.util.UUID;
 
 /**
  * Created by ToanNB on 6/12/2015.
@@ -31,6 +34,12 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.login_layout);
 
         Variables.currentPage = 0;
+
+        if (Methods.getDeviceID(getApplicationContext()).equals("")) {
+            String pDeviceID = Methods.getAdvertisementID(getApplicationContext());
+            Methods.saveDeviceID(getApplicationContext(), pDeviceID);
+        }
+
         initView();
     }
 
@@ -68,18 +77,8 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     private boolean checkPasswords() {
         int passwordsLength = editPasswords.getText().toString().length();
         if (passwordsLength > 0) {
-            if (passwordsLength >= 6 && passwordsLength <= 8) {
-                if (Character.isUpperCase(editPasswords.getText().charAt(0))) {
-                    if(editPasswords.getText().toString().matches(".*\\d.*")){
-                        return true;
-                    } else{
-                        Toast.makeText(getApplicationContext(), getResources().getString(R.string.error_passwords_chuaso), Toast.LENGTH_SHORT).show();
-                        return false;
-                    }
-                } else {
-                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.error_passwords_inhoa), Toast.LENGTH_SHORT).show();
-                    return false;
-                }
+            if (passwordsLength >= 6 && passwordsLength <= 50) {
+                return true;
             } else {
                 Toast.makeText(getApplicationContext(), getResources().getString(R.string.error_passwords_doai6den8), Toast.LENGTH_SHORT).show();
                 return false;
@@ -126,13 +125,13 @@ public class LoginActivity extends Activity implements View.OnClickListener {
                 break;
 
             case R.id.login_button:
-//                if (checkPhoneNumber() == true && checkPasswords() == true) {
+                if (checkPhoneNumber() == true && checkPasswords() == true) {
                     Toast.makeText(getApplicationContext(), "Mật khẩu đã được chấp nhận", Toast.LENGTH_SHORT).show();
 
                     Intent intentLogin = new Intent(getApplicationContext(), DashboardActivity.class);
                     startActivity(intentLogin);
                     finish();
-//                }
+                }
                 break;
         }
     }

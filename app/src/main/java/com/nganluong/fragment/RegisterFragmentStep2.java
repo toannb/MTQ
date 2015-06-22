@@ -3,6 +3,7 @@ package com.nganluong.fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,14 +12,16 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.nganluong.api.UserRegisterRequest;
 import com.nganluong.config.Variables;
 import com.nganluong.manhthuongquan.R;
 import com.nganluong.manhthuongquan.RegisterActivity;
+import com.nganluong.util.Methods;
 
 /**
  * Created by ToanNB on 6/11/2015.
  */
-public class RegisterFragmentStep2 extends Fragment implements View.OnClickListener {
+public class RegisterFragmentStep2 extends Fragment implements View.OnClickListener, UserRegisterRequest.UserRegisterRequestOnResult {
 
     private TextView txtBuoc2, txtTitleBuoc2, txtDauSo, txtRegisterStepText1, txtRegisterStepText2, txtErrorOTP;
     private EditText editPhoneNumber, editOTP;
@@ -61,6 +64,14 @@ public class RegisterFragmentStep2 extends Fragment implements View.OnClickListe
         return view;
     }
 
+    private void userRegisterRequest() {
+        String phoneNumber = editPhoneNumber.getText().toString();
+
+        UserRegisterRequest userRegisterRequest = new UserRegisterRequest();
+        userRegisterRequest.execute(getActivity(), phoneNumber, String.valueOf(Variables.iStyle_User));
+        userRegisterRequest.getUserRegisterRequestOnResult(this);
+    }
+
     @Override
     public void onClick(View v) {
         int id = v.getId();
@@ -70,12 +81,17 @@ public class RegisterFragmentStep2 extends Fragment implements View.OnClickListe
                 break;
 
             case R.id.btnOK:
-
+                userRegisterRequest();
                 break;
 
             case R.id.btnOkOTP:
                 ((RegisterActivity) getActivity()).setPage(2);
                 break;
         }
+    }
+
+    @Override
+    public void onUserRegisterRequestOnResult(boolean result, String data) {
+        Log.d("chan", "onUserRegisterRequestOnResult: " + Methods.decrypt(data));
     }
 }

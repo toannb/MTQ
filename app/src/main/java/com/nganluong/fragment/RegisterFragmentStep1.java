@@ -11,6 +11,7 @@ import android.widget.ExpandableListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.nganluong.config.Constant;
 import com.nganluong.config.Variables;
 import com.nganluong.manhthuongquan.R;
 
@@ -62,7 +63,14 @@ public class RegisterFragmentStep1 extends Fragment implements ExpandableListVie
                     mExpandableListView.collapseGroup(previousItem );
 
                 previousItem = groupPosition;
-                Toast.makeText(getActivity(), "Item: " + previousItem, Toast.LENGTH_SHORT).show();
+
+                if (previousItem == 0) {
+                    Variables.iStyle_User = Constant.TAG_NGUOI_DI_VAY;
+                } else if (previousItem == 1) {
+                    Variables.iStyle_User = Constant.TAG_NGUOI_CHO_VAY;
+                } else if (previousItem == 2) {
+                    Variables.iStyle_User = Constant.TAG_NGUOI_BAN_HANG;
+                }
             }
         });
 
