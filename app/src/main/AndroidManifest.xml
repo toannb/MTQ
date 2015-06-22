@@ -33,7 +33,7 @@
             android:name=".RegisterSuccessActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".HomePageActivity"
+            android:name=".DashboardActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".FogetPasswordsActivity"

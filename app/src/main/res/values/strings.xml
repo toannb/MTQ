@@ -72,4 +72,12 @@
     <string name="home_page_contact">Liên hệ\n </string>
     <string name="home_page_hello_user">Xin chào %1$s,</string>
     <string name="home_page_user_number">Hiện có &lt;font color=\'#FF0000\'>%1$d&lt;/font> người duyệt yêu cầu vay tiền mặt\n Bạn chưa có yêu cầu vay mua trả góp</string>
+
+    <string name="name_hosocanhan">Hồ sơ cá nhân</string>
+    <string name="name_banla">Bạn là?</string>
+    <string name="name_luachonnghe">Lựa chọn trạng thái nghề nghiệp của bạn</string>
+    <string name="name_sinhvien">Sinh viên</string>
+    <string name="name_nguoilamtudo">Người làm tự do</string>
+    <string name="name_nguoidilam">Người đi làm</string>
+    <string name="name_chudoanhnghiep">Chủ doanh nghiệp</string>
 </resources>

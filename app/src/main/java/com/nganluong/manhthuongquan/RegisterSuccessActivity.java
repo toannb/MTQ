@@ -10,8 +10,6 @@ import android.widget.TextView;
 
 import com.nganluong.config.Variables;
 
-import org.w3c.dom.Text;
-
 /**
  * Created by ToanNB on 6/16/2015.
  */
@@ -56,7 +54,7 @@ public class RegisterSuccessActivity extends Activity implements View.OnClickLis
                 break;
 
             case R.id.success_ignore_button:
-                Intent intentHomePage = new Intent(getApplicationContext(), HomePageActivity.class);
+                Intent intentHomePage = new Intent(getApplicationContext(), DashboardActivity.class);
                 startActivity(intentHomePage);
                 finish();
                 break;

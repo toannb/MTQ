@@ -8,4 +8,5 @@ import android.graphics.Typeface;
 public class Variables {
 
     public static Typeface objFont = null;
+    public static int currentPage = 0;
 }

@@ -30,6 +30,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_layout);
 
+        Variables.currentPage = 0;
         initView();
     }
 
@@ -125,13 +126,13 @@ public class LoginActivity extends Activity implements View.OnClickListener {
                 break;
 
             case R.id.login_button:
-                if (checkPhoneNumber() == true && checkPasswords() == true) {
+//                if (checkPhoneNumber() == true && checkPasswords() == true) {
                     Toast.makeText(getApplicationContext(), "Mật khẩu đã được chấp nhận", Toast.LENGTH_SHORT).show();
 
-                    Intent intentLogin = new Intent(getApplicationContext(), HomePageActivity.class);
+                    Intent intentLogin = new Intent(getApplicationContext(), DashboardActivity.class);
                     startActivity(intentLogin);
                     finish();
-                }
+//                }
                 break;
         }
     }

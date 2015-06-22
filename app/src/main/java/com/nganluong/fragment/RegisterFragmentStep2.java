@@ -1,6 +1,7 @@
 package com.nganluong.fragment;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,6 +25,7 @@ public class RegisterFragmentStep2 extends Fragment implements View.OnClickListe
     private ImageView btnDeletePhone;
     private Button btnOK, btnOkOTP;
 
+    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.register_step2_1_layout, container, false);

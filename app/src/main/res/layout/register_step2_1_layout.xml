@@ -144,10 +144,10 @@
                 android:id="@+id/register_step2_otp_layout_id"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_alignParentBottom="true"
                 android:layout_marginBottom="@dimen/register_formOTPnho_margin_bottom"
                 android:layout_marginLeft="@dimen/register_formOTPnho_margin_left"
                 android:layout_marginRight="@dimen/register_formOTPnho_margin_right"
+                android:layout_alignParentBottom="true"
                 android:background="@drawable/bg_otp"
                 android:orientation="vertical"
                 android:visibility="visible">
